@@ -1,0 +1,27 @@
+name: Build Report
+
+on: 
+  push:
+    branches: [ "main" ]
+    paths: [ "src/**" ]
+
+jobs:
+
+  Build-Publish-EWR:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Build into PDF
+        run: make all
+
+      - name: Auto-Release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          title: Expert Witness Report
+          prerelease: false
+          automatic_release_tag: ExpertWitnessReport
+          files: ExpertWitnessReport.pdf
