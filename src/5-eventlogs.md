@@ -6,8 +6,9 @@ I used these log sources in order to build a skeleton for the timeline of events
 
 I analyzed the event logs by extracting the SYSTEM and SECURITY logs from the case image and by using a program called Event Log Explorer, which gave me a finer-tuned control over filtering and viewing the logs. In all following screenshots, the application's timezone has been changed to Pacific time to reflect the local time of the case. All times shown are in Pacific (PST).
 
-## User Log On
-![A screenshot of Event Log Explorer showing the details of a user logon.](./images/logon-elex.png)
+## Event Log Explorer
+
+![A screenshot of Event Log Explorer showing the details of a user logon.\label{logon-elex}](./images/logon-elex.png)
 
 Figure \ref{logon-elex} shows Event Log Explorer with filtered Security logs. One highlighted log is the login of the yeatsw account on November 7th, 2020 at 4:20 PM. There are additional "logins" shown in the logs, however these are routine logons by system services, not users.
 

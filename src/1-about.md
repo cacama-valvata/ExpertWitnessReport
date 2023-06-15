@@ -2,7 +2,7 @@
 
 ## Qualifications
 
-I am a Casey Colley. I am a digital forensics analyst employed by the Oregon Forensics Laboratory. I received a Bachelors of Science in Applied Computer Science from Oregon State University, and have been practicing digital forensics analysis for the past 5 years.
+I am Casey Colley. I am a digital forensics analyst employed by the Oregon Forensics Laboratory. I received a Bachelors of Science in Applied Computer Science from Oregon State University, and have been practicing digital forensics analysis for the past 5 years.
 
 ## Background Information About the Case
 
