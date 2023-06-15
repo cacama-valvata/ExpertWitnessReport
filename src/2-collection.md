@@ -12,17 +12,15 @@ Finally, Dave transferred the virtual hard drive and its corresponding hash valu
 
 # Preliminary Checks
 
-Prior to performing my analysis, I conducted some preliminary checks on the hard drive copy I was given. First I opened the drive copy in FTK Imager, and produced hash values for it. I checked that these hash values matched the hash values I was given by Dave Nevin, and they were identical:
+Prior to performing my analysis, I conducted some preliminary checks on the hard drive copy I was given. First I opened the drive copy in FTK Imager, and produced hash values for it. I checked that these hash values matched the hash values I was given by Dave Nevin, and as shown in Figure \ref{drive-hashes}, they were identical:
 
 - MD5: 0a36e3259c650a63e359ec1a4a0c362c
 - SHA1: b4f6567f2d3453a1d0d0b6258cad1bfbcb50de56
 
-![Calculated hashes compared against the reported hashes in FTK Imager.](./images/drive-hashes.png)
+![Calculated hashes compared against the reported hashes in FTK Imager.\label{drive-hashes}](./images/drive-hashes.png)
 
 I then connected the drive copy to my Windows workstation laptop so that it couldn't be written or modified ("read-only" mode), and ran an antivirus scan using Windows Defender.
 
-I did this by "mounting" the image as a drive on Windows through FTK Imager in "read-only" mode, and then running a targeted scan through Defender to look at only the files on the drive. There were zero threats found on the drive.
+I did this by "mounting" the image as a drive on Windows through FTK Imager in "read-only" mode, and then running a targeted scan through Defender to look at only the files on the drive. Figure \ref{defender-threats} shows there were zero threats found on the drive.
 
-![Mounting the image as a drive through FTK Imager.](./images/ftk-mounting.png)
-
-![Zero threats found on the case image.](./images/defender-threats.png)
+![Zero threats found on the case image.\label{defender-threats}](./images/defender-threats.png)
