@@ -12,7 +12,7 @@
         Digital Forensics Analyst \\
 
         \vfill
-        June x, 2023
+        June 15, 2023
     \end{flushright}
 \end{titlepage}
 
