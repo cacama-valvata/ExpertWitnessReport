@@ -79,7 +79,7 @@ I extracted the following timeline items from the System logs, grouped by day:
 - 2020-11-07 @ 11:24 AM: The System Event Logs were cleared
 - 2020-11-07 @ 12:00 PM: "The system uptime is 2444 seconds."
 - 2020-11-07 @ 3:46 PM: Other Event Logs were cleared
-- 2020-11-07 @ 4:13 PM: Computer joined to byzantium.com domain
+- 2020-11-07 @ 4:13 PM: Computer joined to byzantiumus.com domain
 - 2020-11-07 @ 4:14 PM: User WillyB restarted the computer
 - 2020-11-07 @ 4:36 PM: Service "Mozilla Maintenance" was registered
 - 2020-11-07 @ 5:01 PM: User yeatsw restarted the computer
