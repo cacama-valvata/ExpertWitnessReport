@@ -16,7 +16,7 @@ To extract the hidden file, I consulted a chart of [common file data signifiers]
 
 I searched from within the hex editor for the first instance of that hex sequence. If the file is not hiding another file, then this sequence will be found at the end of the file. However, if it is in the middle of the file, then there is a file stitched on to the end of the cover file. In Figure \ref{hex-xlsx}, I highlight the trailer bytes as well as the header bytes for a new file (which indicates a Microsoft document). To extract this file, I deleted all of the content leading up to these new header bytes, and then saved the result as a new file of the detected type. In this example, the file was a spreadsheet and I saved the file with the extension `.xlsx`.
 
-![](./images/hex-xlsx)
+![A JPG image opened in a hex editor, hiding an Excel spreadsheet.\label{hex-xlsx}](./images/hex-xlsx.png)
 
 ### Subject: ok?
 
@@ -41,9 +41,9 @@ No other files were attached to the email thread.
 
 Yeats' final note indicates that next time he sends files, he is going to attempt to hide it in some fashion. He indicates to Gonne that this will be a hiding scheme that she already knows.
 
-An image was attached to the message, which was a JFIF of two Canadian passports named `chepcolhmclgoecn.jfif.` The image was inspected and no hidden files were found.
+An image was attached to the message, which was a JFIF of two Canadian passports named `chepcolhmclgoecn.jfif` (Figure \ref{chep-jfif}). The image was inspected and no hidden files were found.
 
-![](./images/case/chepcolhmclgoecn.jfif)
+![A JFIF file showing two Canadian passports, sent by Yeats to Gonne.\label{chep-jfif}](./images/case/chepcolhmclgoecn.jpg)
 
 ### Subject: Guess what I got in the mail today?
 
@@ -60,9 +60,15 @@ An image was attached to the message, which was a JFIF of two Canadian passports
 
 This email thread implies that they will be assuming fake identities as Canadian citizens and getting married. Yeats also admits to hacking the British Columbia's systems in order to plant the fake birth certificates.
 
-Two images were attached to the original message, both of which contained hidden files that I carved out of the original files. The two files were `sunset.jpg` and `mandw1.jpg`. Both are pictured in Figures \ref{sunset} and \ref{mandw1}.
+Two images were attached to the original message, both of which contained hidden files that I carved out of the original files. The two files were `sunset.jpg` (Figure \ref{sunset}) and `mandw1.jpg` (Figure \ref{mandw1}).
 
-I extracted the same image of two Canadian passports out of `sunset.jpg`, pictured in Figure \ref{chep}. Additionally, I extracted a copy of a Canadian birth certificate  from `mandw1.jpg`, pictured in \ref{birth-cert}.
+![A picture of Yeats and Gonne on a boat with the sunset, sent by Yeats to Gonne.\label{sunset}](./images/case/sunset.jpg)
+
+![A picture of Yeats and Gonne together with drinks, sent by Yeats to Gonne.\label{mandw1}](./images/case/mandw1.jpg)
+
+I extracted the same image of two Canadian passports out of `sunset.jpg`, pictured in Figure \ref{chep-jfif}. Additionally, I extracted a copy of a Canadian birth certificate  from `mandw1.jpg`, pictured in \ref{birth-cert}.
+
+![A picture of a Canadian birth certificate, sent by Yeats to Gonne.\label{birth-cert}](./images/case/mandw1-carved.jpg)
 
 ### Subject: leaving now
 
@@ -89,15 +95,23 @@ No other files were attached to these messages.
 
 In this email thread, it is confirmed that they got married. There is indication that something happened to their Rose City co-founder Jack in the public eye. Additionally, Yeats is planning to fly out to a small Pacific island, presumably as part of their ongoing plan. Yeats additionally set up some bank accounts for them, and tells Gonne that he'll send her the info.
 
-There is an image attached to the email, `23C5D-5FCEFE00-9-35F8C2C0` without an extension. By inspecting the binary data of the file, I saw that it was another JFIF by the starting hex sequence of `FF D8 FF E0 xx xx 4A 46 49 46 00`. This picture depicts Yeats and Gonne at their wedding. I found no hidden files in this image.
+There is an image attached to the email, `23C5D-5FCEFE00-9-35F8C2C0` without an extension. By inspecting the binary data of the file, I saw that it was another JFIF by the starting hex sequence of `FF D8 FF E0 xx xx 4A 46 49 46 00`. This picture depicts Yeats and Gonne at their wedding (Figure \ref{wedding}). I found no hidden files in this image.
+
+![A picture of Yeats and Gonne at their wedding, sent by Yeats to Gonne.\label{wedding}](./images/case/23C5D-5FCEFE00-9-35F8C2C0.jpg)
 
 ### Subject: No accounting for taste
 
 - 2020-12-07 @ 10:44 PM PST: yeatsw tells gonne that they made "a few quid" with Bitcoin
 
+![A picture of Gonne on a boat dock, sent by Yeats to Gonne.\label{balcony}](./images/case/balcony.jpg)
+
 There was an image attached to the message, `balcony.jpg`, pictured in Figure \ref{balcony}. A ZIP file was hidden inside of it, identified by the magic bytes `PK......`. 
 
-Microsoft Office documents are actually ZIP folders in disguise. I was able to identify what kind of Office document it was by looking at the data inside. Because there is an `xl` in the data, this means that this is a spreadsheet. I isolated the ZIP data in my hex editor and saved the resulting file as `hidden.xlsx`. Opening the spreadsheet, the file contained bank account information, pictured in \ref{xlsx-bank}.
+!['balcony.jpg' opened in a hex editor, hiding an Excel spreadsheet.\label{hex-xlsx2}](./images/hex-xlsx.png)
+
+Microsoft Office documents are actually ZIP folders in disguise. I was able to identify what kind of Office document it was by looking at the data inside. Because there is an `xl` in the data, this means that this is a spreadsheet. I isolated the ZIP data in my hex editor and saved the resulting file as `hidden.xlsx`. Opening the spreadsheet, the file contained bank account information, pictured in Figure \ref{xlsx-bank}.
+
+![A screenshot of the hidden spreadsheet, showcasing banking information.\label{xlsx-bank}](./images/xlsx-bank.png)
 
 ### Subject: Go
 
@@ -108,6 +122,10 @@ Microsoft Office documents are actually ZIP folders in disguise. I was able to i
     - That he is going to delete his server and throw his PC away, and that she should throw her laptop "in the river" as well
 
 Additionally, there are two JPGs attached to the message containing boarding passes, `UABoard SFO-MEX-m.jpg` and `UABoard MEX-VLI-m.jpg`. These are pictured in Figures \ref{boarding-1}-\ref{boarding-2}. I found no hidden files within these images.
+
+![A picture of a boarding pass from SFO to MEX.\label{boarding-1}](./images/case/UABoard_SFO-MEX-m.jpg)
+
+![A picture of a boarding pass from MEX to VLI.\label{boarding-2}](./images/case/UABoard_MEX-VLI-m.jpg)
 
 ## The Phishing Email Impersonating Byzantium
 
@@ -128,7 +146,6 @@ Thanks again,
 
 Ted
 
- 
 
 Theodore Roethke
 
@@ -147,6 +164,8 @@ While I was unable to obtain the headers for the email, the signature at the bot
 
 Autopsy also analyzed the case image for web history. The URLs include visits to byzantiumus.com, and the title of the webpage implies that this is a Zentyal server, which is a web interface for email. This is the email server that Yeats set up for his and Gonne's email communication, and also possibly for sending the phishing email as Ted.Roethke@byzantiumus.com. These URLs are shown in Figure \ref{web-history}.
 
+![A screenshot of Autopsy showing user yeatsw's web history.](./images/web-history.png)
+
 Some URLs were last accessed on 2020-12-07 @ 10:06 PM PST, and some were last accessed on 2020-03-07 @ 5:21 PM PST. One interesting URL is `/sysinfo/View/Halt` visited on 2020-03-07 @ 5:21 PM PST. This timing aligns with Yeats' plan to delete his servers and dump the PC.
 
 In addition, the user yeatsw opened several images in his browser:
@@ -158,7 +177,9 @@ In addition, the user yeatsw opened several images in his browser:
 
 ## Recent Files
 
-Autopsy also extracted Windows "Recent files" metadata from the case image. On Windows, this provides links to the real folder elsewhere on the system. From these list of links we can compile a list of user-created content and the last time of access.
+Autopsy also extracted Windows "Recent files" metadata from the case image (Figure \ref{recent-files}). On Windows, this provides links to the real folder elsewhere on the system. From these list of links we can compile a list of user-created content and the last time of access.
+
+![A screenshot of Autopsy showing user yeatsw's recent files on Windows.](./images/recent-files.png)
 
 - 2020-11-16 @ 3:37 PM PST: C:\\ Users\\ yeatsw\\ Canada
 - 2020-11-23 @ 2:25 PM PST: D:\\ balcony1.jpg
@@ -167,3 +188,5 @@ Autopsy also extracted Windows "Recent files" metadata from the case image. On W
 - 2020-11-23 @ 2:42 PM PST: C:\\ Users\\ yeatsw\\ Desktop\\ mandw1.jpg
 - 2020-11-23 @ 2:41 PM PST: C:\\ Users\\ yeatsw\\ Desktop\\ sunset.jpg
 - 2020-12-07 @ 10:42 PM PST: C:\\ Users\\ yeatsw\\ Desktop\\ balcony.jpg
+
+The recent files information also shows that Yeats had named his USB flash drive (D:\\) "Ubuntu srv." This implies that he was running his Zentyal server from the removable device.
