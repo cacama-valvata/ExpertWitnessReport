@@ -108,6 +108,6 @@ I extracted the following timeline items from the System logs, grouped by day:
 - 2020-12-13 @ 6:14 AM: System resumed from sleep
 \
 - 2021-03-07 @ 5:22 PM: System restarting from a dirty shutdown
-- 2021-03-07 @ 5:23 PM: The last write time was incorrect
+- 2021-03-07 @ 5:23 PM: The last shutdown time was incorrect
 
 These restarts are a mixture of clean shutdowns and dirty shutdowns. I correlated these with the other evidence in order to extract more information, such as what was occurring on the system that might have led to the dirty shutdown.
