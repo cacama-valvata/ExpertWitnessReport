@@ -1,3 +1,5 @@
+\pagebreak
+
 # Analysis of Event Logs
 
 Event logs in Windows are a centralized depository for the operating system and various applications to routinely store information about different activity seen on the system, and when it happened. The most major event logs maintained by Windows are the Security log and the System log. The Security log primarily keeps track of user logons, "Run as administrator" executions, and other sensitive data access. The system log contains low-level system information such as logs from device drivers. 

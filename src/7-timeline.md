@@ -1,12 +1,14 @@
+\pagebreak
+
 # Appendix A: Timeline {-}
 
-The following timline items are grouped by user session. Each major event lists sources for activity underneath it. The timeline is in PST.
+The following timeline items are grouped by user session. Each major event lists sources for activity underneath it. The timeline is in PST.
 
-- 2022-11-07 @ 11:19 AM: System started
+- 2020-11-07 @ 11:19 AM: System started
     - System event log "The system uptime is 2444 seconds." at 12:00 PM
 - 2020-11-07 @ 11:24 AM - 3:46 PM: All event logs are cleared by WillyB
     - System and Security event logs
-- 2020-11-07 @ 4:13 PM - PC was joined to the byzantium.com domain
+- 2020-11-07 @ 4:13 PM - PC was joined to the byzantiumus.com domain
     - System event log
 - 2020-11-07 @ 4:14 PM - PC is restarted
     - Security log: User WillyB logged off
@@ -143,3 +145,7 @@ The following timline items are grouped by user session. Each major event lists 
     - Regsitry keys: Last Write Time of yeatsw's NTUSER.DAT
     - Registry keys: Last Write time on various deleted registry keys related to NVIDIA drivers
     - Security log: Dirty event logs were not written to the event log
+\
+- 2021-03-08 @ 10:00 PM PST - Last sighting of Yeats in Astoria, Oregon.
+\
+- 2021-03-10 - The U.S. Coast Guard finds Yeats' sailboat capsized in Cape Disappointment.

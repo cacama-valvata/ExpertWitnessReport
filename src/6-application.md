@@ -1,3 +1,5 @@
+\pagebreak
+
 # Analysis of Application Data
 
 ## Emails in Thunderbird

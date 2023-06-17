@@ -1,3 +1,5 @@
+\pagebreak
+
 # Collection of Digital Evidence
 
 Senior digital forensics analyst Dave Nevin, from the Oregon Forensics Laboratory, collected the physical hard disk drive from the PC that was found by the Lake Oswego Police Department. He then produced a raw *forensics copy*—a bit for bit digital copy of the hard drive.

@@ -1,3 +1,5 @@
+\pagebreak
+
 # Analysis of Shellbags
 
 "Shellbags" refer to special registry keys that record settings for each user after their login sessions. One of the most notable shellbag entries is remembering where on the screen a program was placed when it was closed. When the program is opened again, it is placed back in the same location on the screen as when it was closed. This usability measure can be used in forensic analysis to prove that a specific program was interacted with by a user. Similarly, shellbags also report which folders and file locations were opened with the File Explorer program. This can be used to prove that a user, and not just a process, interacted with a specific folder or file.

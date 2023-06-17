@@ -19,5 +19,3 @@
 \pagebreak
 
 \tableofcontents
-
-\pagebreak

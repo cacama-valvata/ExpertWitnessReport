@@ -1,3 +1,5 @@
+\pagebreak
+
 # Analysis of Registry
 
 The Windows registry is a common database for Windows itself and all applications to store their settings and small log entries. The registry maintains backups and a recent record of changes to the registry. Additionally, changes made to the registry are held in intermediate files and only written to the actual registry at system shutdown. These unwritten changes are referred to as "dirty" registry hives. Because of this behavior, the registry is especially valuable in forensic analysis because it can capture unique states of the computer (such as an incomplete shut down), and because the registry's keys are difficult to forge. Registry keys are written in heirarchical form and they look like a file path.
